@@ -1,0 +1,21 @@
+﻿<Window x:Class="TaxSee.AdminPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TaxSee"
+        mc:Ignorable="d"
+        Title="Администратор" Height="768" Width="1280">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <Button Style="{DynamicResource ButtonStyle}" x:Name="OrdersBut" Content="Заказы" Margin="0,250,0,0" HorizontalAlignment="Center" Width="200" Height="75" FontFamily="Courier New" FontSize="26" FontWeight="Bold" Click="OrdersBut_Click"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <Button x:Name="DriversBut" Content="Водители" Margin="0,50,0,0" HorizontalAlignment="Center" Width="200" Height="75" FontFamily="Courier New" FontSize="26" FontWeight="Bold" Click="DriversBut_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

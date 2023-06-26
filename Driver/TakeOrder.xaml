@@ -1,0 +1,31 @@
+﻿<Window x:Class="TaxSee.TakeOrder"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TaxSee"
+        mc:Ignorable="d"
+        Title="Водитель" Height="768" Width="1024">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.ColumnSpan="3">
+            <DataGrid x:Name="IncomingOrders" Height="100" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,250,0,0" Width="1000"/>
+        </StackPanel>
+        <StackPanel Grid.Column="2"/>
+        <StackPanel Grid.Column="1" Margin="0,501,0,0" Grid.RowSpan="2">
+            <Button x:Name="TakeOrderBut" Content="Button" Click="TakeOrderBut_Click" Margin="0,25,0,0"/>
+            <TextBox x:Name="TakeOrderText" TextWrapping="Wrap" Text="TextBox" Width="120" Margin="0,15,0,0"/>
+        </StackPanel>
+        <StackPanel Margin="0,501,0,0" Grid.RowSpan="2"/>
+        <StackPanel Grid.Column="2" Margin="0,501,0,0" Grid.RowSpan="2"/>
+
+    </Grid>
+</Window>

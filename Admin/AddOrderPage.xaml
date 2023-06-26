@@ -1,0 +1,60 @@
+﻿<Window x:Class="TaxSee.Admin.AddOrderPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TaxSee.Admin"
+        mc:Ignorable="d"
+        Title="AddOrderPage" Height="350" Width="1280">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <TextBox x:Name="OrderIDText" TextWrapping="Wrap" Text="ID заказа" Width="120" Margin="0,120,0,0"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <TextBox x:Name="NameText" TextWrapping="Wrap" Text="Имя клиента" Width="120" Margin="0,120,0,0"/>
+        </StackPanel>
+        <StackPanel Grid.Column="2">
+            <TextBox x:Name="CityDepartureText" TextWrapping="Wrap" Text="Город отбытия" Width="120" Margin="0,120,0,0"/>
+        </StackPanel>
+        <StackPanel Grid.Column="3">
+            <TextBox x:Name="StreetDepartureText" TextWrapping="Wrap" Text="Улица отбытия" Width="120" Margin="0,120,0,0"/>
+        </StackPanel>
+        <StackPanel Grid.Column="4">
+            <TextBox x:Name="HouseDepartureText" TextWrapping="Wrap" Text="Дом отбытия" Width="120" Margin="0,120,0,0"/>
+        </StackPanel>
+        <StackPanel Grid.Column="5">
+            <TextBox x:Name="CityDestinationText" TextWrapping="Wrap" Text="Город назначения" Width="120" Margin="0,120,0,0"/>
+        </StackPanel>
+        <StackPanel Grid.Column="6">
+            <TextBox x:Name="StreetDestinationText" TextWrapping="Wrap" Text="Улица назначения" Width="120" Margin="0,120,0,0"/>
+        </StackPanel>
+        <StackPanel Grid.Column="7">
+            <TextBox x:Name="HouseDestinationText" TextWrapping="Wrap" Text="Дом назначения" Width="120" Margin="0,120,0,0"/>
+        </StackPanel>
+        <StackPanel Grid.Column="8">
+            <TextBox x:Name="AddNotesText" TextWrapping="Wrap" Text="Доп. информация" Width="120" Margin="0,120,0,0"/>
+        </StackPanel>
+        <StackPanel Grid.Column="9">
+            <TextBox x:Name="DriverIDText" TextWrapping="Wrap" Text="ID водителя" Width="120" Margin="0,120,0,0"/>
+        </StackPanel>
+        <StackPanel Grid.Column="4" Grid.Row="1" Grid.ColumnSpan="2">
+            <Button x:Name="AddOrderBut" Content="Добавить заказ" Margin="0,25,0,0" Width="250" Height="50" Click="AddOrderBut_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
